@@ -26,3 +26,9 @@ typeof msg        // "number"
 
 typeof to         // "string"
 
+msg = "te"
+
+to = 12
+
+msg / to      // NaN     i.e. Not a Number
+
