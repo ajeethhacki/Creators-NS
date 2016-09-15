@@ -1,22 +1,22 @@
-console.log('Hello World');
+console.log('Hello World');     // 'Hello World'
 
-msg = 'Hai Welcome back';
+msg = 'Hai Welcome back';       // "Hai Welcome back"
 
-console.log(msg)
+console.log(msg)                // 'Hai Welcome back'
 
-msg = 12
+msg = 12          // 12
 
-console.log(msg)
+console.log(msg)  // 12
 
-msg = true
+msg = true    // true
 
-console.log(msg)
+console.log(msg)    // true
 
-var msg;
+var msg;    // undefined
 
-msg = 12
+msg = 12    // 12
 
-to = "12"
+to = "12"   // "12"
 
 msg == to         // true
 
