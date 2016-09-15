@@ -22,3 +22,7 @@ msg == to         // true
 
 msg === to        // false
 
+typeof msg        // "number"
+
+typeof to         // "string"
+
