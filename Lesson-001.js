@@ -32,3 +32,6 @@ to = 12
 
 msg / to      // NaN     i.e. Not a Number
 
+var str = new String("Steve Job. He is owner of Apple Inc");
+
+str.search("is");     // 14    i.e. index of search string
