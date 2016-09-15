@@ -13,3 +13,12 @@ msg = true
 console.log(msg)
 
 var msg;
+
+msg = 12
+
+to = "12"
+
+msg == to         // true
+
+msg === to        // false
+
