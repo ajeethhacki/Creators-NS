@@ -41,3 +41,11 @@ job. \
 owner \
 of apple\
 Inc."               // "steve job. owner of appleInc."
+
+var arr = []
+
+arr[0] = 12
+
+arr[7] = 56
+
+arr     // [12, undefined × 6, 56]
