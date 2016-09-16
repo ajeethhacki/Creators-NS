@@ -97,3 +97,17 @@ emp		//Object {name: "Steve Jobs", company: "Apple Inc."}company: "Apple Inc."na
 
 emp.showProfile()	//Steve Jobs	Apple Inc.
 
+var emp1 = { name: "Guido Van Rossom", company: "Python Org." }
+
+emp1		//Object {name: "Guido Van Rossom", company: "Python Org."}
+
+emp1.showProfile = function() { console.log(this.name+"\t"+this.company); }
+
+emp		//Object {name: "Steve Jobs", company: "Apple Inc."}
+
+emp1		//Object {name: "Guido Van Rossom", company: "Python Org."}
+
+emp.showProfile()	//Steve Jobs	Apple Inc.
+
+emp1.showProfile()	//Guido Van Rossom	Python Org.
+
