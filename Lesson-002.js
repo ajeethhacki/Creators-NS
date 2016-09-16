@@ -38,4 +38,25 @@ sumOfArray([])  // Sum is 0
 
 sumOfArray([1,2,3,4])  // Sum is 10
 
+/*
+<!doctype html>
+<html>
+	<head>
+		<title>Index Page</title>
+	</head>
+	<body>
+	</body>
+</html>
+ */
+
+
+function test() {
+    document.writeln('<ul>');
+    for (var i = 0; i < 5; i++) {
+        document.writeln('<li>Value ' + i + '</li>');
+    }
+    document.writeln('</ul>');
+}
+
+test()        // View Your Page it will Show you Output as list
 
