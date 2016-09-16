@@ -60,3 +60,16 @@ function test() {
 
 test()        // View Your Page it will Show you Output as list
 
+function renderFruits(index){
+	var arr=new Array('orange', 'apple', 'grapes', 'mango', 'banana', 'greenapple', 'pomegrante', 'watermelon', 'pineapple');
+	document.writeln("<ol>");
+	for(var i=0;i < arr.length; i++)
+		document.writeln("<li>"+arr[i]+"</li>");
+	document.writeln("</ol>");
+	return arr[index%10];
+}
+
+var selected = renderFruits(3)
+
+document.writeln("<h1>You have selected </h1>"+selected);
+
