@@ -179,3 +179,31 @@ function profile() {
 var emp = new Employee("Steve Jobs", "Apple Inc.");
 
 emp.showProfile()	//Steve Jobs		Apple Inc.
+
+for(props in emp) { 
+	console.log(emp[props]); 
+}
+/*
+	Steve Jobs
+	Apple Inc.
+	profile() {
+		console.log(this.name + "\t\t" + this.company);
+	}
+*/
+
+for(props in emp) { 
+	console.log(props);
+}
+/*
+	name
+	company
+	showProfile
+*/
+
+for(props in emp) { 
+	document.writeln(props); 
+}
+
+for(props in emp) { 
+	document.writeln("<h1>"+emp[props]+"</h1>");
+}
