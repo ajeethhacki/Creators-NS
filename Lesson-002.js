@@ -118,3 +118,64 @@ emp.showProfile() //Steve Jobs	Apple Inc.
 
 emp1.showProfile() //Guido Van Rossom	Python Org.
 
+emp["name"] = "Steve";
+
+emp["showProfile"]()
+
+delete emp.location
+
+var emp = new Object()
+
+var emp = {
+	name: "Steve Jobs",
+	company: "Apple Inc.",
+	showProfile: function() {
+		console.log(this.name + "\t\t" + this.company);
+	}
+}
+
+function Employee(name,company) {
+	this.name = name;
+	this.company = company;
+	showProfile = profile;
+	function profile() {
+		console.log(this.name + "\t\t" + this.company);
+	}
+}
+
+var emp = new Employee("Steve Jobs", "Apple Inc.");
+
+function Employee(name,company) {
+	this.name = name;
+	this.company = company;
+	this.showProfile = profile;
+	function profile() {
+		console.log(this.name + "\t\t" + this.company);
+	}
+}
+
+var emp = new Employee("Steve Jobs", "Apple Inc.");
+
+var emp1 = new Employee("Guido Van Rossom", "Python org.");
+
+function Employee(name,company) {
+	this.name = name;
+	this.company = company;
+	this.showProfile = profile;
+}
+
+function profile() {
+	console.log(name + "\t\t" + company);
+}
+
+var emp = new Employee("Steve Jobs", "Apple Inc.");
+
+emp.showProfile()	//Uncaught ReferenceError: company is not defined(…)profile, (anonymous function)
+
+function profile() {
+	console.log(this.name + "\t\t" + this.company);
+}
+
+var emp = new Employee("Steve Jobs", "Apple Inc.");
+
+emp.showProfile()	//Steve Jobs		Apple Inc.
